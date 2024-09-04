@@ -1,0 +1,169 @@
+
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hsl(0, 0%, 100%);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            padding: 10px;
+            background-color: hsl(0, 0%, 0%);
+            color: white;
+            font-size: 2rem;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            flex: 1;
+        }
+        
+        #noteDanger {
+            color: white;
+            margin-top: 15px;
+            width: 84%;
+
+        }
+
+        #sumOne {
+            color: red;
+            font-size: 15px;
+            border: 1px solid red;
+            width: 80px;
+            align-items: center;
+            text-align: center;
+            margin-top: 10px;
+            
+        }
+        
+        #hr1div {
+            margin-top: 30px;
+        }
+        
+        /*
+        #hr2Left {
+            margin-top: 10px;
+        }
+        */
+        /* Upload Section */
+        .upload-section {
+            width: 25%;
+            padding: 20px;
+            background-color: #fefefe;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: left;
+        }
+
+        .upload-section input, .upload-section button {
+            width: 80%;
+            margin: 10px 0;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .upload-section button {
+            padding: 10px 20px;
+            background-color: hsl(200, 88%, 48%);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        /*1)(220, 60%, 98%)
+        2)hsl(200, 88%, 48%)*/
+        .hero-section {
+            width: 75%;
+            overflow-x: auto;
+            padding: 20px;
+            background-color: rgb(254,221,0);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        /* Memory Card */
+        .memory-card {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            min-width: 300px;
+            position: relative;
+        }
+
+        .memory-card img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .memory-description {
+            background-color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .memory-description .delete-icon {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            cursor: pointer;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Modal for Zoom */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: auto;
+        }
+
+        .modal-content {
+            margin: 10% auto;
+            display: block;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
